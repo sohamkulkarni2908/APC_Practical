@@ -1,0 +1,12 @@
+import numpy as np
+a = np.arange(1, 25).reshape(2, 3, 4)
+
+print("Array:")
+print(a)
+print("Sum of all elements:", np.sum(a))
+print("Sum of each layer:")
+print(np.sum(a, axis=(1, 2)))
+print("Sum along rows:")
+print(np.sum(a, axis=2))
+print("Sum along columns:")
+print(np.sum(a, axis=1))
